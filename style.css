@@ -1,0 +1,181 @@
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+a {
+	list-style: none;
+	text-decoration: none;
+}
+
+ul, figure {
+	margin: 0;
+	padding: 0;
+}
+
+h4, p {
+	margin: 0;
+}
+
+.grid {
+	display: grid;
+	grid-template-rows: 35px 250px 25px 1fr 50px;
+	grid-gap: 10px; 
+}
+
+.header {
+	display: flex;
+	align-items: flex-end;
+	justify-content: flex-end;
+}
+
+.header__followus {
+	margin-right: 2px;
+	font-weight: bold;
+}
+
+.header__link {
+	margin: 0 3px;
+	height: 35px;
+}
+
+.header__link__social {
+	width: 35px;
+	height: 35px;
+}
+
+.brand {
+	width: 96%;
+	height: 250px;
+	margin: 0 auto;
+}
+
+.brand__logo {
+	height: inherit;
+	width: inherit;
+}
+
+.menu {
+	display: flex;
+}
+
+.menu__link {
+	margin: 0 40px;
+	color: #111;
+}
+
+.menu__link:first-child {
+	margin-left: 80px;
+}
+
+.menu__link:last-child {
+	margin-right: 0;
+}
+
+.menu__link__item {
+	font-size: 1.2em;
+}
+
+.articles {
+	display: grid;
+	grid-template-columns: 1fr 350px;
+	grid-gap: 50px;
+	margin: 0 10px;
+	
+}
+
+.articles__container {
+	display: grid;
+	grid-template-rows: repeat(4, 250px);
+}
+
+.article {
+	border: 1px solid #111;
+	background-color: #e5e5e5;
+	display: flex;
+	align-items: center;
+	padding: 0 10px;
+}
+
+.article__device {
+	width: 350px;
+	height: 213px;
+}
+
+.article__device__image {
+	height: inherit;
+	width: inherit;
+	vertical-align: top;
+}
+
+.article__info {
+	padding-left: 10px;
+	padding-bottom: 120px;
+}
+
+.article__info__title {
+	padding: 15px 0;
+}
+
+.article__info__paragraph {
+	text-align: justify;
+}
+
+.footer {
+	display: flex;
+	background-color: #f1f1f1;
+	justify-content: space-around;
+	padding: 15px 0;
+	color: #333;
+}
+
+.footer__menu {
+	display: flex;
+	list-style: none;
+}
+
+.footer__menu__legal {
+	margin: 0 7px;
+}
+
+.footer__menu__legal:first-child {
+	margin-left: 0;
+}
+
+.footer__copyright {
+	margin-left: 150px;
+}
+
+
+/* sidebar */
+
+.sidebar {
+	display: grid;
+	grid-template-rows: 260px 210px;
+	grid-gap: 15px;
+}
+
+.laptops {
+	border: 1px dashed #111;
+}
+
+.Escribenos {
+	border: 1px dashed #111;
+}
+
+.laptops__lista {
+	list-style: none;
+}
+
+.laptops__title, .Escribenos__title {
+	text-align: center;
+	background-color: red;
+	margin: 15px 0;
+}
+
+.Escribenos__title {
+	border: 1px solid #111;
+}
+
+.Escribenos p:nth-of-type(2) {
+	margin: 20px 0;
+}
